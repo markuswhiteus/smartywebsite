@@ -3,7 +3,7 @@ require ('./smartyHeader.php');
 include 'connect.php';
 
 $title = 'TheBurningHat';
-$header = 'Login';
+$header = 'Register';
 $link1 = 'Home';
 $link2 = 'About Us';
 $link3 = 'Staff';
@@ -20,12 +20,12 @@ $smarty->assign('link4',$link4);
 $smarty->assign('link5',$link5);
 
 
-if ($_POST['register']) {
-  if ($_POST['username'] && $_POST['password']){
+if (isset($_POST['register'])) {
+  if (isset($_POST['username']) && isset($_POST['password'])){
     $username = mysqli_real_escape_string($conn, $_POST['username']);
     $password = mysqli_real_escape_string($conn, hash("sha512", $_POST['password']));
     $name = '';
-    if ($_POST['name']){
+    if (isset($_POST['name'])){
       $name = mysqli_real_escape_string($conn, stripslashes($_POST['name']));
     }
     $query = $conn->query("SELECT * FROM users WHERE Username = '{$username}'");

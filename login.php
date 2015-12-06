@@ -20,8 +20,8 @@ $smarty->assign('link4',$link4);
 $smarty->assign('link5',$link5);
 
 
-if ($_POST['login']) {
-  if ($_POST['username'] && $_POST['password']){
+if (isset($_POST['login'])) {
+  if (isset($_POST['username']) && isset($_POST['password'])){
   
     $username = mysqli_real_escape_string($conn, $_POST['username']);
     $password = mysqli_real_escape_string($conn, hash("sha512",$_POST['password']));
