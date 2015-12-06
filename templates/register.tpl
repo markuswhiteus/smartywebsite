@@ -22,38 +22,11 @@
 			</div>
 		</div>
 		<div class="content">
-      <h3>{$header2}</h3>
 			<form action='' method='post'>
-        <table>
-          <tr>
-            <td>
-              <b>Username:<b>
-            </td>
-            <td>
-              <input type='text' name='username'>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <b>Password:</b>
-            </td>
-            <td>
-            <td>
-              <input type='password' name='password'>
-            </td>
-          </tr>
-          <tr>
-            <b>Name:</b>
-          </tr>
-          <tr>
-             <input type='text' name='name'>
-          </tr>
-          <tr>
-            <td>
-              <input type='submit' value='Register' name='register'>
-            </td>
-          </tr>            
-        </table>
+        <label>Username: <input type='text' name='username'> </label>
+        <label>Password: <input type='password' name='password'> </label>
+        <label>Name: <input type='text' name='name'> </label>
+        <input type='submit' value='Register' name='register'>   
       </form>
       <a href="login.php" >Login!</a
 		</div>
