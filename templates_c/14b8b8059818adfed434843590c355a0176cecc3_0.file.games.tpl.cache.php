@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-12-06 17:09:11
+<?php /* Smarty version 3.1.27, created on 2015-12-07 13:50:31
          compiled from "/home/stud/1/1428269/public_html/templates/games.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:123363346356646bb7552813_27885659%%*/
+/*%%SmartyHeaderCode:21325531556658ea7c49124_65592643%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -13,7 +13,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '123363346356646bb7552813_27885659',
+  'nocache_hash' => '21325531556658ea7c49124_65592643',
   'variables' => 
   array (
     'title' => 0,
@@ -27,13 +27,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_56646bb75ab4b1_06146218',
+  'unifunc' => 'content_56658ea7c99dd2_59430504',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_56646bb75ab4b1_06146218')) {
-function content_56646bb75ab4b1_06146218 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_56658ea7c99dd2_59430504')) {
+function content_56658ea7c99dd2_59430504 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '123363346356646bb7552813_27885659';
+$_smarty_tpl->properties['nocache_hash'] = '21325531556658ea7c49124_65592643';
 ?>
 <!DOCTYPE html>
 <html>

@@ -1,17 +1,17 @@
 <?php
-/*%%SmartyHeaderCode:149580624556659f0fcd2ef5_75077246%%*/
+/*%%SmartyHeaderCode:5254146185665a60b0ac938_12446394%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'af4b9675825d6ae897a00b775c8d9b663a8b9a07' => 
+    '6ce40646419623f4f29f852eb506c72578da2cf2' => 
     array (
-      0 => '/home/stud/1/1428269/public_html/templates/main.tpl',
-      1 => 1449498200,
+      0 => '/home/stud/1/1428269/public_html/templates/profile.tpl',
+      1 => 1449500628,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '149580624556659f0fcd2ef5_75077246',
+  'nocache_hash' => '5254146185665a60b0ac938_12446394',
   'tpl_function' => 
   array (
   ),
@@ -26,16 +26,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'url' => 0,
     'link5' => 0,
     'header2' => 0,
-    'content' => 0,
+    'data' => 0,
+    'item' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_56659f0fd8f094_98010506',
+  'unifunc' => 'content_5665a60b1369d5_44411378',
   'cache_lifetime' => 120,
 ),true);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_56659f0fd8f094_98010506')) {
-function content_56659f0fd8f094_98010506 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5665a60b1369d5_44411378')) {
+function content_5665a60b1369d5_44411378 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -62,7 +63,20 @@ function content_56659f0fd8f094_98010506 ($_smarty_tpl) {
 		</div>
 		<div class="content">
       <h3>Welcome Admin</h3>
-			<p>Welcome to the home page of TheBurningHat, We are a small indie game development company. Don't forget to check the site often for all the latest news and updates from our latest projects!</p>
+      <table>
+        <tr>
+          <th>Your Details</th>
+        </tr>
+        <tr>
+          <th>Username</th>
+          <th>User Id</th>
+          <th>Fullname</th>
+        </tr>
+        
+Notice: Undefined index: data in /home/stud/1/1428269/public_html/templates_c/6ce40646419623f4f29f852eb506c72578da2cf2_0.file.profile.tpl.cache.php on line 85
+
+Notice: Trying to get property of non-object in /home/stud/1/1428269/public_html/templates_c/6ce40646419623f4f29f852eb506c72578da2cf2_0.file.profile.tpl.cache.php on line 85
+      </table>
 		</div>
 		<div id="bottombar" > </div>
     </body>

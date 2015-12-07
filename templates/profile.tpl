@@ -23,7 +23,23 @@
 		</div>
 		<div class="content">
       <h3>{$header2}</h3>
-			<p>{$content}</p>
+      <table>
+        <tr>
+          <th>Your Details</th>
+        </tr>
+        <tr>
+          <th>Username</th>
+          <th>User Id</th>
+          <th>Fullname</th>
+        </tr>
+        {foreach from=$data item=item key=key}
+          <tr>
+            <td>{$item.Username}</td>
+            <td>{$item.ID}</td>
+            <td>{$item.Fullname}</td>
+          </tr>
+        {/foreach}
+      </table>
 		</div>
 		<div id="bottombar" > </div>
     </body>

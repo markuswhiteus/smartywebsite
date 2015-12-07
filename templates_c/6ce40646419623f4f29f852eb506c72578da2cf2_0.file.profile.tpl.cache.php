@@ -1,19 +1,19 @@
-<?php /* Smarty version 3.1.27, created on 2015-12-07 14:31:53
-         compiled from "/home/stud/1/1428269/public_html/templates/staff.tpl" */ ?>
+<?php /* Smarty version 3.1.27, created on 2015-12-07 15:30:19
+         compiled from "/home/stud/1/1428269/public_html/templates/profile.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:18306058965665985949e082_38005125%%*/
+/*%%SmartyHeaderCode:5254146185665a60b0ac938_12446394%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'bd5aa951fb191c4217b3a99e3e7df2fe565f3910' => 
+    '6ce40646419623f4f29f852eb506c72578da2cf2' => 
     array (
-      0 => '/home/stud/1/1428269/public_html/templates/staff.tpl',
-      1 => 1449424476,
+      0 => '/home/stud/1/1428269/public_html/templates/profile.tpl',
+      1 => 1449500628,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '18306058965665985949e082_38005125',
+  'nocache_hash' => '5254146185665a60b0ac938_12446394',
   'variables' => 
   array (
     'title' => 0,
@@ -22,6 +22,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'link2' => 0,
     'link3' => 0,
     'link4' => 0,
+    'url' => 0,
     'link5' => 0,
     'header2' => 0,
     'data' => 0,
@@ -29,13 +30,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_56659859555a25_14276614',
+  'unifunc' => 'content_5665a60b112533_52833469',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_56659859555a25_14276614')) {
-function content_56659859555a25_14276614 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5665a60b112533_52833469')) {
+function content_5665a60b112533_52833469 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '18306058965665985949e082_38005125';
+$_smarty_tpl->properties['nocache_hash'] = '5254146185665a60b0ac938_12446394';
 ?>
 <!DOCTYPE html>
 <html>
@@ -62,7 +63,8 @@ $_smarty_tpl->properties['nocache_hash'] = '18306058965665985949e082_38005125';
 </a></li>
 					<li><a href="games.php" ><?php echo $_smarty_tpl->tpl_vars['link4']->value;?>
 </a><li>
-					<li><a href="contact.php" ><?php echo $_smarty_tpl->tpl_vars['link5']->value;?>
+					<li><a href="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+" ><?php echo $_smarty_tpl->tpl_vars['link5']->value;?>
 </a></li>
 				</ul>
 			</div>
@@ -70,11 +72,14 @@ $_smarty_tpl->properties['nocache_hash'] = '18306058965665985949e082_38005125';
 		<div class="content">
       <h3><?php echo $_smarty_tpl->tpl_vars['header2']->value;?>
 </h3>
-      <table class= "center">
+      <table>
         <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Position</th>
+          <th>Your Details</th>
+        </tr>
+        <tr>
+          <th>Username</th>
+          <th>User Id</th>
+          <th>Fullname</th>
         </tr>
         <?php
 $_from = $_smarty_tpl->tpl_vars['data']->value;
@@ -89,11 +94,11 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
 $foreach_item_Sav = $_smarty_tpl->tpl_vars['item'];
 ?>
           <tr>
-            <td><?php echo $_smarty_tpl->tpl_vars['item']->value['Forename'];?>
+            <td><?php echo $_smarty_tpl->tpl_vars['item']->value['Username'];?>
 </td>
-            <td><?php echo $_smarty_tpl->tpl_vars['item']->value['Surname'];?>
+            <td><?php echo $_smarty_tpl->tpl_vars['item']->value['ID'];?>
 </td>
-            <td><?php echo $_smarty_tpl->tpl_vars['item']->value['Position'];?>
+            <td><?php echo $_smarty_tpl->tpl_vars['item']->value['Fullname'];?>
 </td>
           </tr>
         <?php

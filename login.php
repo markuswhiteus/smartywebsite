@@ -2,7 +2,6 @@
 require ('./smartyHeader.php');
 include 'connect.php';
 
-session_start();
 if (isset($_SESSION["loggedin"]) == true){
   session_destroy();
   header("Location: login.php");
