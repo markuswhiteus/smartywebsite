@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-12-06 20:52:05
+<?php /* Smarty version 3.1.27, created on 2015-12-07 00:13:13
          compiled from "/home/stud/1/1428269/public_html/templates/login.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:213426550356649ff5511584_24758737%%*/
+/*%%SmartyHeaderCode:2566415935664cf195d91a8_85444803%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '889a280fac1e27d28a0e5279a6d6c81dce460174' => 
     array (
       0 => '/home/stud/1/1428269/public_html/templates/login.tpl',
-      1 => 1449431025,
+      1 => 1449438468,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '213426550356649ff5511584_24758737',
+  'nocache_hash' => '2566415935664cf195d91a8_85444803',
   'variables' => 
   array (
     'title' => 0,
@@ -23,17 +23,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'link3' => 0,
     'link4' => 0,
     'link5' => 0,
-    'header2' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_56649ff555c9c4_08744344',
+  'unifunc' => 'content_5664cf19611ac5_84233198',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_56649ff555c9c4_08744344')) {
-function content_56649ff555c9c4_08744344 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5664cf19611ac5_84233198')) {
+function content_5664cf19611ac5_84233198 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '213426550356649ff5511584_24758737';
+$_smarty_tpl->properties['nocache_hash'] = '2566415935664cf195d91a8_85444803';
 ?>
 <!DOCTYPE html>
 <html>
@@ -66,33 +65,10 @@ $_smarty_tpl->properties['nocache_hash'] = '213426550356649ff5511584_24758737';
 			</div>
 		</div>
 		<div class="content">
-      <h3><?php echo $_smarty_tpl->tpl_vars['header2']->value;?>
-</h3>
 			<form action='' method='post'>
-        <table>
-          <tr>
-            <td>
-              <b>Username:<b>
-            </td>
-            <td>
-              <input type='text' name='username'>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <b>Password:</b>
-            </td>
-            <td>
-            <td>
-              <input type='password' name='password'>
-            </td>
-          </tr>
-          <tr>
-            <td>
+              <label><span>Username:</span> <input type='text' name='username'></label>
+              <label>Password: <input type='password' name='password'></label>
               <input type='submit' value='Login' name='login'>
-            </td>
-          </tr>            
-        </table>
       </form>
       <a href="register.php" >Register!</a
 		</div>

@@ -1,5 +1,5 @@
 <?php
-/*%%SmartyHeaderCode:5032436845664a0155018a2_11909539%%*/
+/*%%SmartyHeaderCode:4053367355664c07cbe1234_86721815%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -7,11 +7,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '213083e8c2d1a18bd17f9c79b98397d6090087fc' => 
     array (
       0 => '/home/stud/1/1428269/public_html/templates/register.tpl',
-      1 => 1449431024,
+      1 => 1449437885,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '5032436845664a0155018a2_11909539',
+  'nocache_hash' => '4053367355664c07cbe1234_86721815',
   'tpl_function' => 
   array (
   ),
@@ -24,16 +24,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'link3' => 0,
     'link4' => 0,
     'link5' => 0,
-    'header2' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5664a01558b3e2_18720834',
+  'unifunc' => 'content_5664c07cc68725_82320993',
   'cache_lifetime' => 120,
 ),true);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5664a01558b3e2_18720834')) {
-function content_5664a01558b3e2_18720834 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5664c07cc68725_82320993')) {
+function content_5664c07cc68725_82320993 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -46,7 +45,7 @@ function content_5664a01558b3e2_18720834 ($_smarty_tpl) {
         <div class="hbg">
 			<div class="hbg2">
 				<div id="logo"><a href="index.php"> <img  src="./res/newlogo.png" alt="TheBurningHat"/></a></div>
-				<h1 id="header">Login</h1>
+				<h1 id="header">Register</h1>
 			</div>
 			<div class="navbar" id="navtext">
 				<ul>
@@ -59,42 +58,11 @@ function content_5664a01558b3e2_18720834 ($_smarty_tpl) {
 			</div>
 		</div>
 		<div class="content">
-      <h3>
-Notice: Undefined index: header2 in /home/stud/1/1428269/public_html/templates_c/213083e8c2d1a18bd17f9c79b98397d6090087fc_0.file.register.tpl.cache.php on line 69
-
-Notice: Trying to get property of non-object in /home/stud/1/1428269/public_html/templates_c/213083e8c2d1a18bd17f9c79b98397d6090087fc_0.file.register.tpl.cache.php on line 69
-</h3>
 			<form action='' method='post'>
-        <table>
-          <tr>
-            <td>
-              <b>Username:<b>
-            </td>
-            <td>
-              <input type='text' name='username'>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <b>Password:</b>
-            </td>
-            <td>
-            <td>
-              <input type='password' name='password'>
-            </td>
-          </tr>
-          <tr>
-            <b>Name:</b>
-          </tr>
-          <tr>
-             <input type='text' name='name'>
-          </tr>
-          <tr>
-            <td>
-              <input type='submit' value='Register' name='register'>
-            </td>
-          </tr>            
-        </table>
+        <label>Username: <input type='text' name='username'> </label>
+        <label>Password: <input type='password' name='password'> </label>
+        <label>Name: <input type='text' name='name'> </label>
+        <input type='submit' value='Register' name='register'>   
       </form>
       <a href="login.php" >Login!</a
 		</div>

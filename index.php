@@ -1,14 +1,26 @@
 <?php
 require ('./smartyHeader.php');
 
-$title = 'TheBurningHat';
+session_start();
+if (isset($_SESSION["loggedin"]) == true){
+  $link5 = 'Logout';
+  $username = isset($_Session["username"]);
+  $header2 = 'Welcome ' . $username;
+}
+else{
+  $link5 = 'Login';
+  $header2 = 'Welcome';
+}
+  
+
+$title = 'TheBurningHat ';
 $header = 'TheBurningHat';
 $link1 = 'Home';
 $link2 = 'About Us';
 $link3 = 'Staff';
 $link4 = 'Games';
-$link5 = 'Contact';
-$header2 = 'Welcome';
+$link6 = 'Logout';
+
 $content ="Welcome to the home page of TheBurningHat, We are a small indie game development company. Don't forget to check the site often for all the latest news and updates from our latest projects!";
 
 

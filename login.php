@@ -2,13 +2,19 @@
 require ('./smartyHeader.php');
 include 'connect.php';
 
+session_start();
+if (isset($_SESSION["loggedin"]) == true){
+  session_destroy();
+  header("Location: login.php");
+}
+
 $title = 'TheBurningHat';
 $header = 'Login';
 $link1 = 'Home';
 $link2 = 'About Us';
 $link3 = 'Staff';
 $link4 = 'Games';
-$link5 = 'Contact';
+$link5 = 'Login';
 
 
 $smarty->assign('title',$title);
@@ -38,7 +44,9 @@ if (isset($_POST['login'])) {
     setcookie("c_salt", $salt, time() + 24 * 60 * 60, "/");
     $userID = $user['ID'];
     $conn->query("UPDATE `users` SET `Salt`='{$salt}' WHERE `ID`='{$userID}'");
-    die("You are now logged in as $username!");
+    $_SESSION["username"] = $username;
+    $_SESSION["loggedin"] = true;
+    header("Location: index.php");
     }
   }
 

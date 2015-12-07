@@ -17,7 +17,7 @@
 					<li><a href="about.php" >{$link2}</a></li>
 					<li><a href="staff.php" >{$link3}</a></li>
 					<li><a href="games.php" >{$link4}</a><li>
-					<li><a href="contact.php" >{$link5}</a></li>
+					<li><a href="login.php" >{$link5}</a></li>
 				</ul>
 			</div>
 		</div>
