@@ -1,5 +1,5 @@
 <?php
-/*%%SmartyHeaderCode:17752469395665bbaaedaad0_62375648%%*/
+/*%%SmartyHeaderCode:18532359235665c7d06c0334_46762665%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '17752469395665bbaaedaad0_62375648',
+  'nocache_hash' => '18532359235665c7d06c0334_46762665',
   'tpl_function' => 
   array (
   ),
@@ -29,12 +29,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5665bbab01c1c8_41012230',
+  'unifunc' => 'content_5665c7d071e6b3_97037527',
   'cache_lifetime' => 120,
 ),true);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5665bbab01c1c8_41012230')) {
-function content_5665bbab01c1c8_41012230 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5665c7d071e6b3_97037527')) {
+function content_5665c7d071e6b3_97037527 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -55,16 +55,12 @@ function content_5665bbab01c1c8_41012230 ($_smarty_tpl) {
 					<li><a href="about.php" >About Us</a></li>
 					<li><a href="staff.php" >Staff</a></li>
 					<li><a href="games.php" >Games</a><li>
-					<li><a href="
-Notice: Undefined index: url in /home/stud/1/1428269/public_html/templates_c/091f44184b97f8be67a978b568438503cedf52b6_0.file.delete.tpl.cache.php on line 64
-
-Notice: Trying to get property of non-object in /home/stud/1/1428269/public_html/templates_c/091f44184b97f8be67a978b568438503cedf52b6_0.file.delete.tpl.cache.php on line 64
-" >Contact</a></li>
+					<li><a href="profile.php" >My Profile</a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="content">
-      <h3>Change Username</h3>
+      <h3>Delete Account</h3>
 			<form action='' method='post'>
               <input type='submit' value='Delete Account' name='delete'>
       </form>

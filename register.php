@@ -2,13 +2,19 @@
 require ('./smartyHeader.php');
 include 'connect.php';
 
+if (isset($_SESSION["loggedin"]) == true){
+    header("Location: index.php");
+    
+  }
+
 $title = 'TheBurningHat';
 $header = 'Register';
 $link1 = 'Home';
 $link2 = 'About Us';
 $link3 = 'Staff';
 $link4 = 'Games';
-$link5 = 'Contact';
+$link5 = 'Login';
+$url = 'login.php';
 
 
 $smarty->assign('title',$title);
@@ -18,6 +24,7 @@ $smarty->assign('link2',$link2);
 $smarty->assign('link3',$link3);
 $smarty->assign('link4',$link4);
 $smarty->assign('link5',$link5);
+$smarty->assign('url',$url);
 
 
 if (isset($_POST['register'])) {
@@ -31,19 +38,19 @@ if (isset($_POST['register'])) {
     $query = $conn->query("SELECT * FROM users WHERE Username = '{$username}'");
     $check = $query->fetch_assoc();
     if ($check != 0){
-      die("That username already exists! Try another!");
+      die("That username already exists! Try another!   <a href='register.php'>Back</a>");
     }
     if (!ctype_alnum($username)) {
-      die("Username contains special characters only letters and numbers are allowed!");
+      die("Username contains special characters only letters and numbers are allowed!   <a href='register.php'>Back</a>");
     }
     if (strlen($username) > 20){
-    die("Username must not contain more than 20 chatacters");
+    die("Username must not contain more than 20 chatacters   <a href='register.php'>Back</a>");
     }
     $salt = hash("sha512", rand() . rand() . rand());
-    $conn->query("INSERT INTO `users` (Username, Password, Fullname, Salt) VALUES ('{$username}', '{$password}', '{$name}', '{$salt}')") or die(mysqli_error($conn));
+    $conn->query("INSERT INTO `users` (Username, Password, Fullname, Salt) VALUES ('{$username}', '{$password}', '{$name}', '{$salt}')");
     setcookie("c_user", hash("sha512", $username), time() + 24 * 60 * 60, "/");
     setcookie("c_salt", $salt, time() + 24 * 60 * 60, "/");
-    die($username. $password. $name. $salt); 
+    die("Account Created!   <a href='login.php'>Login!</a>"); 
     
   }
 }

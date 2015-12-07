@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-12-07 14:31:53
+<?php /* Smarty version 3.1.27, created on 2015-12-07 17:44:38
          compiled from "/home/stud/1/1428269/public_html/templates/staff.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:18306058965665985949e082_38005125%%*/
+/*%%SmartyHeaderCode:11723796115665c586099ce9_61059797%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'bd5aa951fb191c4217b3a99e3e7df2fe565f3910' => 
     array (
       0 => '/home/stud/1/1428269/public_html/templates/staff.tpl',
-      1 => 1449424476,
+      1 => 1449510185,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '18306058965665985949e082_38005125',
+  'nocache_hash' => '11723796115665c586099ce9_61059797',
   'variables' => 
   array (
     'title' => 0,
@@ -22,6 +22,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'link2' => 0,
     'link3' => 0,
     'link4' => 0,
+    'url' => 0,
     'link5' => 0,
     'header2' => 0,
     'data' => 0,
@@ -29,13 +30,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_56659859555a25_14276614',
+  'unifunc' => 'content_5665c5860ee977_72904769',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_56659859555a25_14276614')) {
-function content_56659859555a25_14276614 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5665c5860ee977_72904769')) {
+function content_5665c5860ee977_72904769 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '18306058965665985949e082_38005125';
+$_smarty_tpl->properties['nocache_hash'] = '11723796115665c586099ce9_61059797';
 ?>
 <!DOCTYPE html>
 <html>
@@ -62,7 +63,8 @@ $_smarty_tpl->properties['nocache_hash'] = '18306058965665985949e082_38005125';
 </a></li>
 					<li><a href="games.php" ><?php echo $_smarty_tpl->tpl_vars['link4']->value;?>
 </a><li>
-					<li><a href="contact.php" ><?php echo $_smarty_tpl->tpl_vars['link5']->value;?>
+					<li><a href="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+" ><?php echo $_smarty_tpl->tpl_vars['link5']->value;?>
 </a></li>
 				</ul>
 			</div>

@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-12-07 16:46:13
+<?php /* Smarty version 3.1.27, created on 2015-12-07 17:50:48
          compiled from "/home/stud/1/1428269/public_html/templates/register.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:3168870215665b7d5abff50_38374477%%*/
+/*%%SmartyHeaderCode:16995660215665c6f8524a58_91200358%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '213083e8c2d1a18bd17f9c79b98397d6090087fc' => 
     array (
       0 => '/home/stud/1/1428269/public_html/templates/register.tpl',
-      1 => 1449437885,
+      1 => 1449509674,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3168870215665b7d5abff50_38374477',
+  'nocache_hash' => '16995660215665c6f8524a58_91200358',
   'variables' => 
   array (
     'title' => 0,
@@ -22,17 +22,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'link2' => 0,
     'link3' => 0,
     'link4' => 0,
+    'url' => 0,
     'link5' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5665b7d5b3d0f1_17114771',
+  'unifunc' => 'content_5665c6f8561678_04389999',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5665b7d5b3d0f1_17114771')) {
-function content_5665b7d5b3d0f1_17114771 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5665c6f8561678_04389999')) {
+function content_5665c6f8561678_04389999 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '3168870215665b7d5abff50_38374477';
+$_smarty_tpl->properties['nocache_hash'] = '16995660215665c6f8524a58_91200358';
 ?>
 <!DOCTYPE html>
 <html>
@@ -59,7 +60,8 @@ $_smarty_tpl->properties['nocache_hash'] = '3168870215665b7d5abff50_38374477';
 </a></li>
 					<li><a href="games.php" ><?php echo $_smarty_tpl->tpl_vars['link4']->value;?>
 </a><li>
-					<li><a href="contact.php" ><?php echo $_smarty_tpl->tpl_vars['link5']->value;?>
+					<li><a href="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+" ><?php echo $_smarty_tpl->tpl_vars['link5']->value;?>
 </a></li>
 				</ul>
 			</div>
@@ -71,7 +73,6 @@ $_smarty_tpl->properties['nocache_hash'] = '3168870215665b7d5abff50_38374477';
         <label>Name: <input type='text' name='name'> </label>
         <input type='submit' value='Register' name='register'>   
       </form>
-      <a href="login.php" >Login!</a
 		</div>
 		<div id="bottombar" > </div>
     </body>

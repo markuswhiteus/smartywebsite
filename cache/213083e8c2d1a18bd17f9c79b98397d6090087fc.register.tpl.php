@@ -1,5 +1,5 @@
 <?php
-/*%%SmartyHeaderCode:3168870215665b7d5abff50_38374477%%*/
+/*%%SmartyHeaderCode:16995660215665c6f8524a58_91200358%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -7,11 +7,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '213083e8c2d1a18bd17f9c79b98397d6090087fc' => 
     array (
       0 => '/home/stud/1/1428269/public_html/templates/register.tpl',
-      1 => 1449437885,
+      1 => 1449509674,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3168870215665b7d5abff50_38374477',
+  'nocache_hash' => '16995660215665c6f8524a58_91200358',
   'tpl_function' => 
   array (
   ),
@@ -23,16 +23,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'link2' => 0,
     'link3' => 0,
     'link4' => 0,
+    'url' => 0,
     'link5' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5665b7d5b620b5_68593419',
+  'unifunc' => 'content_5665c6f857d0d7_12347814',
   'cache_lifetime' => 120,
 ),true);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5665b7d5b620b5_68593419')) {
-function content_5665b7d5b620b5_68593419 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5665c6f857d0d7_12347814')) {
+function content_5665c6f857d0d7_12347814 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -53,7 +54,7 @@ function content_5665b7d5b620b5_68593419 ($_smarty_tpl) {
 					<li><a href="about.php" >About Us</a></li>
 					<li><a href="staff.php" >Staff</a></li>
 					<li><a href="games.php" >Games</a><li>
-					<li><a href="contact.php" >Contact</a></li>
+					<li><a href="login.php" >Login</a></li>
 				</ul>
 			</div>
 		</div>
@@ -64,7 +65,6 @@ function content_5665b7d5b620b5_68593419 ($_smarty_tpl) {
         <label>Name: <input type='text' name='name'> </label>
         <input type='submit' value='Register' name='register'>   
       </form>
-      <a href="login.php" >Login!</a
 		</div>
 		<div id="bottombar" > </div>
     </body>

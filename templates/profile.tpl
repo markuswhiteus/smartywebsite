@@ -38,10 +38,11 @@
             <td>{$Fullname}</td>
           </tr>
       </table>
-      <ul>
+      <ul id="profile">
         <a href="login.php">Logout</a>
         <a href="modify.php">Change Username</a>
         <a href="delete.php">Delete Account</a>
+        <a href="search.php">Search Users</a>
        </ul>
 		</div>
 		<div id="bottombar" > </div>

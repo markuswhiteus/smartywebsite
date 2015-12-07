@@ -14,6 +14,7 @@ $link2 = 'About Us';
 $link3 = 'Staff';
 $link4 = 'Games';
 $link5 = 'Login';
+$url = 'login.php';
 
 
 $smarty->assign('title',$title);
@@ -23,6 +24,7 @@ $smarty->assign('link2',$link2);
 $smarty->assign('link3',$link3);
 $smarty->assign('link4',$link4);
 $smarty->assign('link5',$link5);
+$smarty->assign('url',$url);
 
 
 if (isset($_POST['login'])) {
@@ -33,10 +35,10 @@ if (isset($_POST['login'])) {
     $query = $conn->query("SELECT * FROM users WHERE Username = '{$username}'") or die(mysqli_error($conn));
     $user = $query->fetch_assoc();
     if ($user == 0){
-      die("That user does not exisit.");
+      die("That user does not exist.   <a href='login.php>Back</a>");
       }
     if ($user['Password'] != $password){
-      die("Incorrect password!") ;
+      die("Incorrect password!   <a href='login.php>Back</a>") ;
       }
     $salt = hash("sha512", rand() . rand(). rand()); 
     setcookie("c_user", hash("sha512", $username), time() + 24 * 60 * 60, "/");

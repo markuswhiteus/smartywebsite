@@ -23,8 +23,7 @@ $link1 = 'Home';
 $link2 = 'About Us';
 $link3 = 'Staff';
 $link4 = 'Games';
-$link5 = 'Contact';
-$header2 = 'Change Username';
+$header2 = 'Delete Account';
 
 
 $smarty->assign('title',$title);
@@ -34,12 +33,14 @@ $smarty->assign('link2',$link2);
 $smarty->assign('link3',$link3);
 $smarty->assign('link4',$link4);
 $smarty->assign('link5',$link5);
+$smarty->assign('url',$url);
 $smarty->assign('header2',$header2);
 
 
 if (isset($_POST['delete'])) {
     $conn->query("DELETE FROM `users` WHERE `ID`='{$UID}'");
-    die("Account Deleted");    
+    session_destroy();
+    die("Account Deleted   <a href='index.php'>Home</a>");    
   }
 
 

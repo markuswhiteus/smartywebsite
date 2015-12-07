@@ -17,7 +17,7 @@
 					<li><a href="about.php" >{$link2}</a></li>
 					<li><a href="staff.php" >{$link3}</a></li>
 					<li><a href="games.php" >{$link4}</a><li>
-					<li><a href="contact.php" >{$link5}</a></li>
+					<li><a href="{$url}" >{$link5}</a></li>
 				</ul>
 			</div>
 		</div>
@@ -28,7 +28,6 @@
         <label>Name: <input type='text' name='name'> </label>
         <input type='submit' value='Register' name='register'>   
       </form>
-      <a href="login.php" >Login!</a
 		</div>
 		<div id="bottombar" > </div>
     </body>

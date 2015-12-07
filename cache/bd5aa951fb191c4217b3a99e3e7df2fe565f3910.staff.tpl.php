@@ -1,5 +1,5 @@
 <?php
-/*%%SmartyHeaderCode:18306058965665985949e082_38005125%%*/
+/*%%SmartyHeaderCode:11723796115665c586099ce9_61059797%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -7,11 +7,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'bd5aa951fb191c4217b3a99e3e7df2fe565f3910' => 
     array (
       0 => '/home/stud/1/1428269/public_html/templates/staff.tpl',
-      1 => 1449424476,
+      1 => 1449510185,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '18306058965665985949e082_38005125',
+  'nocache_hash' => '11723796115665c586099ce9_61059797',
   'tpl_function' => 
   array (
   ),
@@ -23,6 +23,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'link2' => 0,
     'link3' => 0,
     'link4' => 0,
+    'url' => 0,
     'link5' => 0,
     'header2' => 0,
     'data' => 0,
@@ -30,12 +31,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5665985957d612_06469178',
+  'unifunc' => 'content_5665c5861126b7_54020358',
   'cache_lifetime' => 120,
 ),true);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5665985957d612_06469178')) {
-function content_5665985957d612_06469178 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5665c5861126b7_54020358')) {
+function content_5665c5861126b7_54020358 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -56,7 +57,7 @@ function content_5665985957d612_06469178 ($_smarty_tpl) {
 					<li><a href="about.php" >About Us</a></li>
 					<li><a href="staff.php" >Staff</a></li>
 					<li><a href="games.php" >Games</a><li>
-					<li><a href="contact.php" >Contact</a></li>
+					<li><a href="login.php" >Login</a></li>
 				</ul>
 			</div>
 		</div>
