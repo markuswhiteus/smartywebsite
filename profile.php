@@ -13,7 +13,15 @@ else{
   $url = 'login.php';
   header("Location:login.php");
 }
-  
+
+
+$sql = "SELECT Username, ID, Fullname FROM users WHERE Username = '{$username}'";
+$result = $conn->query($sql);
+
+    while($row = $result->fetch_assoc()) {
+      $ID = $row['ID'];
+      $fullname = $row['Fullname'];}
+    $conn->close();  
 
 $title = 'TheBurningHat ';
 $header = 'TheBurningHat';
@@ -21,7 +29,6 @@ $link1 = 'Home';
 $link2 = 'About Us';
 $link3 = 'Staff';
 $link4 = 'Games';
-
 
 
 
@@ -34,14 +41,12 @@ $smarty->assign('link4',$link4);
 $smarty->assign('link5',$link5);
 $smarty->assign('header2',$header2);
 $smarty->assign('url',$url);
+$smarty->assign('username',$username);
+$smarty->assign('ID',$ID);
+$smarty->assign('Fullname',$fullname);
 
 
-$sql = "SELECT Username, ID, Fullname FROM users WHERE Username = '{$username}'";
-$result = $conn->query($sql);
 
-    while($row = $result->fetch_assoc()) {
-      $data[] = $row; }
-    $conn->close();
 
 
 $smarty->display('profile.tpl');
