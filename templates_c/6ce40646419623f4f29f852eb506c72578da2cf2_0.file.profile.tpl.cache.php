@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-12-07 16:06:43
+<?php /* Smarty version 3.1.27, created on 2015-12-07 16:52:21
          compiled from "/home/stud/1/1428269/public_html/templates/profile.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:15931919045665ae930fdf94_35743907%%*/
+/*%%SmartyHeaderCode:846766445665b945b17d14_22769037%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,11 +9,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6ce40646419623f4f29f852eb506c72578da2cf2' => 
     array (
       0 => '/home/stud/1/1428269/public_html/templates/profile.tpl',
-      1 => 1449504401,
+      1 => 1449505884,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '15931919045665ae930fdf94_35743907',
+  'nocache_hash' => '846766445665b945b17d14_22769037',
   'variables' => 
   array (
     'title' => 0,
@@ -31,13 +31,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5665ae931ac695_15529682',
+  'unifunc' => 'content_5665b945b57cc1_05535116',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5665ae931ac695_15529682')) {
-function content_5665ae931ac695_15529682 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5665b945b57cc1_05535116')) {
+function content_5665b945b57cc1_05535116 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '15931919045665ae930fdf94_35743907';
+$_smarty_tpl->properties['nocache_hash'] = '846766445665b945b17d14_22769037';
 ?>
 <!DOCTYPE html>
 <html>
@@ -91,6 +91,11 @@ $_smarty_tpl->properties['nocache_hash'] = '15931919045665ae930fdf94_35743907';
 </td>
           </tr>
       </table>
+      <ul>
+        <a href="login.php">Logout</a>
+        <a href="modify.php">Change Username</a>
+        <a href="delete.php">Delete Account</a>
+       </ul>
 		</div>
 		<div id="bottombar" > </div>
     </body>

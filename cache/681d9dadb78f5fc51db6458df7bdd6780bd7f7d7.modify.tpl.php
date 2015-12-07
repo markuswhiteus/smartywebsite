@@ -1,17 +1,17 @@
 <?php
-/*%%SmartyHeaderCode:3168870215665b7d5abff50_38374477%%*/
+/*%%SmartyHeaderCode:5250701715665b9429537a1_34498052%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '213083e8c2d1a18bd17f9c79b98397d6090087fc' => 
+    '681d9dadb78f5fc51db6458df7bdd6780bd7f7d7' => 
     array (
-      0 => '/home/stud/1/1428269/public_html/templates/register.tpl',
-      1 => 1449437885,
+      0 => '/home/stud/1/1428269/public_html/templates/modify.tpl',
+      1 => 1449506958,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3168870215665b7d5abff50_38374477',
+  'nocache_hash' => '5250701715665b9429537a1_34498052',
   'tpl_function' => 
   array (
   ),
@@ -23,16 +23,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'link2' => 0,
     'link3' => 0,
     'link4' => 0,
+    'url' => 0,
     'link5' => 0,
+    'header2' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5665b7d5b620b5_68593419',
+  'unifunc' => 'content_5665b942a186f1_72993161',
   'cache_lifetime' => 120,
 ),true);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5665b7d5b620b5_68593419')) {
-function content_5665b7d5b620b5_68593419 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5665b942a186f1_72993161')) {
+function content_5665b942a186f1_72993161 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -53,18 +55,20 @@ function content_5665b7d5b620b5_68593419 ($_smarty_tpl) {
 					<li><a href="about.php" >About Us</a></li>
 					<li><a href="staff.php" >Staff</a></li>
 					<li><a href="games.php" >Games</a><li>
-					<li><a href="contact.php" >Contact</a></li>
+					<li><a href="
+Notice: Undefined index: url in /home/stud/1/1428269/public_html/templates_c/681d9dadb78f5fc51db6458df7bdd6780bd7f7d7_0.file.modify.tpl.cache.php on line 64
+
+Notice: Trying to get property of non-object in /home/stud/1/1428269/public_html/templates_c/681d9dadb78f5fc51db6458df7bdd6780bd7f7d7_0.file.modify.tpl.cache.php on line 64
+" >Contact</a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="content">
+      <h3>Change Username</h3>
 			<form action='' method='post'>
-        <label>Username: <input type='text' name='username'> </label>
-        <label>Password: <input type='password' name='password'> </label>
-        <label>Name: <input type='text' name='name'> </label>
-        <input type='submit' value='Register' name='register'>   
+              <label><span>New Username:</span> <input type='text' name='newusername'></label>
+              <input type='submit' value='Change Username' name='changename'>
       </form>
-      <a href="login.php" >Login!</a
 		</div>
 		<div id="bottombar" > </div>
     </body>

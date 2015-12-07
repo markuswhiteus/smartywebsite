@@ -23,26 +23,10 @@
 		</div>
 		<div class="content">
       <h3>{$header2}</h3>
-      <table class="center">
-        <tr>
-          <th colspan="3">Your Details</th>
-        </tr>
-        <tr>
-          <th>Username</th>
-          <th>User Id</th>
-          <th>Fullname</th>
-        </tr>
-          <tr>
-            <td>{$username}</td>
-            <td>{$ID}</td>
-            <td>{$Fullname}</td>
-          </tr>
-      </table>
-      <ul>
-        <a href="login.php">Logout</a>
-        <a href="modify.php">Change Username</a>
-        <a href="delete.php">Delete Account</a>
-       </ul>
+			<form action='' method='post'>
+              <label><span>New Username:</span> <input type='text' name='newusername'></label>
+              <input type='submit' value='Change Username' name='changename'>
+      </form>
 		</div>
 		<div id="bottombar" > </div>
     </body>

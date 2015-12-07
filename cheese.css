@@ -58,12 +58,12 @@ input{
 	width: 200px;
 }
 
-.navbar a {
+a {
 	text-decoration: none;
 	color: inherit;
 	}
 	
- .navbar a:hover {
+a:hover {
 	font-weight: bold;
 	}
 

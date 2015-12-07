@@ -1,19 +1,19 @@
-<?php /* Smarty version 3.1.27, created on 2015-12-07 16:52:20
-         compiled from "/home/stud/1/1428269/public_html/templates/main.tpl" */ ?>
+<?php /* Smarty version 3.1.27, created on 2015-12-07 16:52:18
+         compiled from "/home/stud/1/1428269/public_html/templates/modify.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:19127306445665b9447ad284_78284466%%*/
+/*%%SmartyHeaderCode:5250701715665b9429537a1_34498052%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'af4b9675825d6ae897a00b775c8d9b663a8b9a07' => 
+    '681d9dadb78f5fc51db6458df7bdd6780bd7f7d7' => 
     array (
-      0 => '/home/stud/1/1428269/public_html/templates/main.tpl',
-      1 => 1449498200,
+      0 => '/home/stud/1/1428269/public_html/templates/modify.tpl',
+      1 => 1449506958,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '19127306445665b9447ad284_78284466',
+  'nocache_hash' => '5250701715665b9429537a1_34498052',
   'variables' => 
   array (
     'title' => 0,
@@ -25,17 +25,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'url' => 0,
     'link5' => 0,
     'header2' => 0,
-    'content' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5665b9447e9814_44771201',
+  'unifunc' => 'content_5665b9429cb599_99822662',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5665b9447e9814_44771201')) {
-function content_5665b9447e9814_44771201 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5665b9429cb599_99822662')) {
+function content_5665b9429cb599_99822662 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '19127306445665b9447ad284_78284466';
+$_smarty_tpl->properties['nocache_hash'] = '5250701715665b9429537a1_34498052';
 ?>
 <!DOCTYPE html>
 <html>
@@ -71,8 +70,10 @@ $_smarty_tpl->properties['nocache_hash'] = '19127306445665b9447ad284_78284466';
 		<div class="content">
       <h3><?php echo $_smarty_tpl->tpl_vars['header2']->value;?>
 </h3>
-			<p><?php echo $_smarty_tpl->tpl_vars['content']->value;?>
-</p>
+			<form action='' method='post'>
+              <label><span>New Username:</span> <input type='text' name='newusername'></label>
+              <input type='submit' value='Change Username' name='changename'>
+      </form>
 		</div>
 		<div id="bottombar" > </div>
     </body>

@@ -44,6 +44,7 @@ if (isset($_POST['login'])) {
     $userID = $user['ID'];
     $conn->query("UPDATE `users` SET `Salt`='{$salt}' WHERE `ID`='{$userID}'");
     $_SESSION["username"] = $username;
+    $_SESSION["UID"] = $userID;
     $_SESSION["loggedin"] = true;
     header("Location: index.php");
     }

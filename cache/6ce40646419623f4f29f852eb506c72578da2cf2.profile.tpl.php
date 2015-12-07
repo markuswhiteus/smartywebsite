@@ -1,5 +1,5 @@
 <?php
-/*%%SmartyHeaderCode:15931919045665ae930fdf94_35743907%%*/
+/*%%SmartyHeaderCode:846766445665b945b17d14_22769037%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -7,11 +7,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6ce40646419623f4f29f852eb506c72578da2cf2' => 
     array (
       0 => '/home/stud/1/1428269/public_html/templates/profile.tpl',
-      1 => 1449504401,
+      1 => 1449505884,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '15931919045665ae930fdf94_35743907',
+  'nocache_hash' => '846766445665b945b17d14_22769037',
   'tpl_function' => 
   array (
   ),
@@ -32,12 +32,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5665ae931f7c42_23131803',
+  'unifunc' => 'content_5665b945b78c85_33003473',
   'cache_lifetime' => 120,
 ),true);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5665ae931f7c42_23131803')) {
-function content_5665ae931f7c42_23131803 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5665b945b78c85_33003473')) {
+function content_5665b945b78c85_33003473 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -79,6 +79,11 @@ function content_5665ae931f7c42_23131803 ($_smarty_tpl) {
             <td>Mark White</td>
           </tr>
       </table>
+      <ul>
+        <a href="login.php">Logout</a>
+        <a href="modify.php">Change Username</a>
+        <a href="delete.php">Delete Account</a>
+       </ul>
 		</div>
 		<div id="bottombar" > </div>
     </body>
