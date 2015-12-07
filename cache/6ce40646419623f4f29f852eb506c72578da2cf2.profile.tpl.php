@@ -1,5 +1,5 @@
 <?php
-/*%%SmartyHeaderCode:14120308765665c8b449d9e7_86004017%%*/
+/*%%SmartyHeaderCode:1708923795566612187eb4b2_36401216%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '14120308765665c8b449d9e7_86004017',
+  'nocache_hash' => '1708923795566612187eb4b2_36401216',
   'tpl_function' => 
   array (
   ),
@@ -32,12 +32,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5665c8b4532cb3_19848639',
+  'unifunc' => 'content_56661218850992_38782514',
   'cache_lifetime' => 120,
 ),true);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5665c8b4532cb3_19848639')) {
-function content_5665c8b4532cb3_19848639 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_56661218850992_38782514')) {
+function content_56661218850992_38782514 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -63,7 +63,7 @@ function content_5665c8b4532cb3_19848639 ($_smarty_tpl) {
 			</div>
 		</div>
 		<div class="content">
-      <h3>Welcome Admin</h3>
+      <h3>Welcome Markus</h3>
       <table class="center">
         <tr>
           <th colspan="3">Your Details</th>
@@ -74,9 +74,9 @@ function content_5665c8b4532cb3_19848639 ($_smarty_tpl) {
           <th>Fullname</th>
         </tr>
           <tr>
-            <td>Admin</td>
-            <td>7</td>
-            <td>Bill</td>
+            <td>Markus</td>
+            <td>9</td>
+            <td>123</td>
           </tr>
       </table>
       <ul id="profile">

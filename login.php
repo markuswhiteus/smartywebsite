@@ -38,7 +38,7 @@ if (isset($_POST['login'])) {
       die("That user does not exist.   <a href='login.php>Back</a>");
       }
     if ($user['Password'] != $password){
-      die("Incorrect password!   <a href='login.php>Back</a>") ;
+      die("Incorrect password!   <a href='login.php'>Back</a>") ;
       }
     $salt = hash("sha512", rand() . rand(). rand()); 
     setcookie("c_user", hash("sha512", $username), time() + 24 * 60 * 60, "/");
