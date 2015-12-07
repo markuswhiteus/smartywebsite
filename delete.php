@@ -37,26 +37,11 @@ $smarty->assign('link5',$link5);
 $smarty->assign('header2',$header2);
 
 
-if (isset($_POST['changename'])) {
-  if (isset($_POST['newusername'])){
-    $newusername = mysqli_real_escape_string($conn, $_POST['newusername']);
-    }
-    $query = $conn->query("SELECT * FROM users WHERE Username = '{$newusername}'");
-    $check = $query->fetch_assoc();
-    if ($check != 0){
-      die("That username already exists! Try another!");
-    }
-    if (!ctype_alnum($newusername)) {
-      die("Username contains special characters only letters and numbers are allowed!");
-    }
-    if (strlen($newusername) > 20){
-    die("Username must not contain more than 20 chatacters");
-    }
-    $conn->query("UPDATE `users` SET `Username`='{$newusername}' WHERE `ID`='{$UID}'");
-    die("You may now log in with your new username"); 
-    
+if (isset($_POST['delete'])) {
+    $conn->query("DELETE FROM `users` WHERE `ID`='{$UID}'");
+    die("Account Deleted");    
   }
 
 
-$smarty->display('modify.tpl');
+$smarty->display('delete.tpl');
 ?>
