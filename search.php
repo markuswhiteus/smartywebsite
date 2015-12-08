@@ -29,7 +29,7 @@ if (isset($_POST['search'])) {
   if (isset($_POST['searchusername'])){
   
     $searchuser = mysqli_real_escape_string($conn, $_POST['searchusername']);
-    $query ="SELECT * FROM users WHERE Username= '$searchuser'";
+    $query ="SELECT * FROM users WHERE Username LIKE '%$searchuser%'";
     $result = $conn->query($query);
     
   if ($result->num_rows > 0) {

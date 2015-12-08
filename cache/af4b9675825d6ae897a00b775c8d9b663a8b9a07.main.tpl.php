@@ -1,5 +1,5 @@
 <?php
-/*%%SmartyHeaderCode:12098546805666128a651371_33610586%%*/
+/*%%SmartyHeaderCode:1320803815566706fa2af727_13758674%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '12098546805666128a651371_33610586',
+  'nocache_hash' => '1320803815566706fa2af727_13758674',
   'tpl_function' => 
   array (
   ),
@@ -30,12 +30,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5666128a6e5773_05316769',
+  'unifunc' => 'content_566706fa30f871_03077858',
   'cache_lifetime' => 120,
 ),true);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5666128a6e5773_05316769')) {
-function content_5666128a6e5773_05316769 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_566706fa30f871_03077858')) {
+function content_566706fa30f871_03077858 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -56,12 +56,12 @@ function content_5666128a6e5773_05316769 ($_smarty_tpl) {
 					<li><a href="about.php" >About Us</a></li>
 					<li><a href="staff.php" >Staff</a></li>
 					<li><a href="games.php" >Games</a><li>
-					<li><a href="profile.php" >My Profile</a></li>
+					<li><a href="login.php" >Login</a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="content">
-      <h3>Welcome Markus</h3>
+      <h3>Welcome </h3>
 			<p>Welcome to the home page of TheBurningHat, We are a small indie game development company. Don't forget to check the site often for all the latest news and updates from our latest projects!</p>
 		</div>
 		<div id="bottombar" > </div>

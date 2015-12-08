@@ -1,5 +1,5 @@
 <?php
-/*%%SmartyHeaderCode:107571232456660c5309cc61_31200471%%*/
+/*%%SmartyHeaderCode:470544031566706cd72c1d8_16644136%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '107571232456660c5309cc61_31200471',
+  'nocache_hash' => '470544031566706cd72c1d8_16644136',
   'tpl_function' => 
   array (
   ),
@@ -31,12 +31,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_56660c53117214_68370563',
+  'unifunc' => 'content_566706cd7b2e77_54832650',
   'cache_lifetime' => 120,
 ),true);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_56660c53117214_68370563')) {
-function content_56660c53117214_68370563 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_566706cd7b2e77_54832650')) {
+function content_566706cd7b2e77_54832650 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -57,7 +57,7 @@ function content_56660c53117214_68370563 ($_smarty_tpl) {
 					<li><a href="about.php" >About Us</a></li>
 					<li><a href="staff.php" >Staff</a></li>
 					<li><a href="games.php" >Games</a><li>
-					<li><a href="login.php" >Login</a></li>
+					<li><a href="profile.php" >My Profile</a></li>
 				</ul>
 			</div>
 		</div>
