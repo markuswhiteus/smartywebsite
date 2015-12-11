@@ -4,7 +4,7 @@ require ('./smartyHeader.php');
 if (isset($_SESSION["loggedin"]) == true){
     $link5 = 'My Profile';
     $url = 'profile.php';
-    $username = $_SESSION["username"];
+    $username = $_COOKIE["username"];
     
   }
   else{

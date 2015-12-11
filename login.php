@@ -7,6 +7,7 @@ if (isset($_SESSION["loggedin"]) == true){
   header("Location: login.php");
 }
 
+
 $title = 'TheBurningHat';
 $header = 'Login';
 $link1 = 'Home';
@@ -26,7 +27,6 @@ $smarty->assign('link4',$link4);
 $smarty->assign('link5',$link5);
 $smarty->assign('url',$url);
 
-
 if (isset($_POST['login'])) {
   if (isset($_POST['username']) && isset($_POST['password'])){
   
@@ -40,9 +40,8 @@ if (isset($_POST['login'])) {
     if ($user['Password'] != $password){
       die("Incorrect password!   <a href='login.php'>Back</a>") ;
       }
-    $salt = hash("sha512", rand() . rand(). rand()); 
-    setcookie("c_user", hash("sha512", $username), time() + 24 * 60 * 60, "/");
-    setcookie("c_salt", $salt, time() + 24 * 60 * 60, "/");
+    $salt = hash("sha512", rand() . rand(). rand());
+    setcookie("username", $username, time() +  60 * 60, "/");
     $userID = $user['ID'];
     $conn->query("UPDATE `users` SET `Salt`='{$salt}' WHERE `ID`='{$userID}'");
     $_SESSION["username"] = $username;
